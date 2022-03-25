@@ -1,0 +1,15 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/aeroplaneeee/ADV-MAP---Choropleth-map/main/elderly_bkk.json",
+    "format": {"type": "topojson", "feature": "elderly_bkk"}
+  },
+  "projection": {"type": "mercator"},
+  "mark": "geoshape",
+  "encoding": {
+    "color": {"field": "properties.totalpop", "type": "quantitative"}
+  },
+  "config": {}
+}
